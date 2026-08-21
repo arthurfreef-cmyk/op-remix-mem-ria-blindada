@@ -594,7 +594,7 @@ function OfertaPage() {
                 className="w-full max-w-[180px] mx-auto mb-4"
                 loading="lazy"
               />
-              <span className="text-4xl font-black text-brand-red">R$ 19,90</span>
+              <span className="text-4xl font-black text-red-600">R$ 19,90</span>
               <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
             </div>
             <ul className="space-y-4 mb-10 flex-1">
