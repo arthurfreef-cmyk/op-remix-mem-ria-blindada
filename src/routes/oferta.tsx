@@ -589,6 +589,12 @@ function OfertaPage() {
               <p className="text-sm text-muted-foreground">A experiência definitiva para quem quer resultados máximos em tempo recorde.</p>
             </div>
             <div className="mb-8">
+              <img
+                src={pack150}
+                alt="Pacote 150 exercícios"
+                className="w-full max-w-[180px] mx-auto mb-4"
+                loading="lazy"
+              />
               <span className="text-4xl font-black text-brand-red">R$ 19,90</span>
               <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
             </div>
