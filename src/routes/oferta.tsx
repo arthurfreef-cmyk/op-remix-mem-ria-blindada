@@ -579,12 +579,12 @@ function OfertaPage() {
           </div>
 
           {/* Plano Completo */}
-          <div className="bg-white border-2 border-brand-red rounded-3xl p-8 shadow-xl flex flex-col relative scale-105 z-10">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-red text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full">
+          <div className="bg-white border-2 border-conversion-blue rounded-3xl p-8 shadow-xl flex flex-col relative scale-105 z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-conversion-blue text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full">
               Recomendado
             </div>
             <div className="mb-6">
-              <h3 className="text-xl font-bold mb-2 text-brand-red">Plano Completo</h3>
+              <h3 className="text-xl font-bold mb-2 text-red-600">Plano Completo</h3>
               <p className="text-sm text-muted-foreground">A experiência definitiva para quem quer resultados máximos em tempo recorde.</p>
             </div>
             <div className="mb-8">
