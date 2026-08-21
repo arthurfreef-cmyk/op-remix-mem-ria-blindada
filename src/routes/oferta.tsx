@@ -787,6 +787,7 @@ function OfertaPage() {
               </span>
             </div>
 
+            <img src={pack150} alt="Plano Completo" className="w-28 mx-auto mb-4 rounded-lg shadow-md" />
             <div className="mb-4 pt-2">
               <h3 className="font-bold text-xl mb-1">Plano Completo</h3>
               <p className="text-xs text-muted-foreground">O método definitivo com todos os aceleradores</p>
