@@ -727,33 +727,98 @@ function OfertaPage() {
         </div>
       </section>
 
-      {/* Plano alternativo — 80 exercícios (secundário, não compete) */}
-      <section className="px-4 py-12 max-w-3xl mx-auto">
-        <p className="text-center text-[11px] font-black uppercase tracking-wider text-muted-foreground mb-3">Orçamento curto?</p>
-        <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center gap-5">
-          <img src={pack80} alt="Pacote 80 exercícios" className="w-24 sm:w-28 flex-shrink-0 rounded-lg" loading="lazy" />
-          <div className="flex-1 w-full text-center sm:text-left">
-            <h3 className="font-bold text-base sm:text-lg mb-1">Plano Inicial · 80 exercícios</h3>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-3">
-              Versão reduzida para começar. <strong className="text-foreground">Sem bônus, sem suporte VIP, sem acesso vitalício.</strong> Recomendado apenas se o pacote completo estiver fora do orçamento.
-            </p>
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3">
-              <a
-                href="/downsell"
-                className="flex-1 inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-bold text-xs sm:text-sm px-4 py-3 rounded-lg transition-colors"
-              >
-                Quero o Plano Inicial · R$ 9,90
-              </a>
-              <a
-                href="#checkout"
-                className="flex-1 inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white font-black text-xs sm:text-sm px-4 py-3 rounded-lg shadow transition-colors uppercase tracking-wide"
-              >
-                Pacote completo · R$ 19,90 →
-              </a>
+      {/* Sessão de Planos — Básico e Completo */}
+      <section className="px-4 py-12 max-w-4xl mx-auto border-t border-gray-100">
+        <h2 className="text-2xl sm:text-3xl font-black text-center mb-10 tracking-tight">Escolha o seu plano</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          {/* Plano Básico */}
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
+            <div className="mb-4">
+              <h3 className="font-bold text-xl mb-1">Plano Básico</h3>
+              <p className="text-xs text-muted-foreground">O essencial para começar a treinar sua memória</p>
             </div>
-            <p className="text-[10px] text-muted-foreground mt-2 text-center sm:text-left">
-              💡 Por apenas <strong className="text-foreground">R$ 20 a mais</strong> você leva +70 exercícios, 3 bônus exclusivos e acesso vitalício.
-            </p>
+            
+            <div className="mb-6">
+              <div className="flex items-baseline gap-1">
+                <span className="text-2xl font-bold">R$ 9,90</span>
+                <span className="text-xs text-muted-foreground">acesso único</span>
+              </div>
+            </div>
+
+            <ul className="space-y-3 mb-8 flex-1">
+              {[
+                "80 exercícios práticos",
+                "Treinos de foco de 5 e 10 min",
+                "Acesso pelo celular e PC",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
+                  <Check className="w-4 h-4 text-success flex-shrink-0 mt-0.5" />
+                  {item}
+                </li>
+              ))}
+              {[
+                "Sem bônus exclusivos",
+                "Sem suporte VIP",
+                "Sem acesso vitalício",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground italic">
+                  <X className="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="/downsell"
+              className="w-full inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-bold py-3 rounded-xl transition-colors"
+            >
+              Quero o Plano Básico
+            </a>
+          </div>
+
+          {/* Plano Completo */}
+          <div className="bg-white border-2 border-brand-red rounded-2xl p-6 flex flex-col shadow-xl relative scale-105 z-10">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span className="bg-brand-red text-white text-[10px] font-black px-4 py-1 rounded-full uppercase shadow-lg whitespace-nowrap">
+                Mais Recomendado
+              </span>
+            </div>
+
+            <div className="mb-4 pt-2">
+              <h3 className="font-bold text-xl mb-1">Plano Completo</h3>
+              <p className="text-xs text-muted-foreground">O método definitivo com todos os aceleradores</p>
+            </div>
+            
+            <div className="mb-6">
+              <div className="flex items-baseline gap-1">
+                <span className="text-2xl font-black text-brand-red">R$ 19,90</span>
+                <span className="text-xs text-muted-foreground">acesso vitalício</span>
+              </div>
+            </div>
+
+            <ul className="space-y-3 mb-8 flex-1">
+              {[
+                "150 exercícios progressivos",
+                "Todos os treinos de foco",
+                "Acesso vitalício ilimitado",
+                "Protocolo Anti-Esquecimento",
+                "Suporte VIP no WhatsApp",
+                "Simulados ENEM e Concursos",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-gray-800 font-medium">
+                  <Check className="w-4 h-4 text-brand-red flex-shrink-0 mt-0.5" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="#checkout"
+              className="w-full inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white font-black py-4 rounded-xl shadow-lg transition-transform active:scale-[0.98]"
+            >
+              Quero o Plano Completo →
+            </a>
           </div>
         </div>
       </section>
