@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-// 'deixe a borda do plano completo azul e o nome plano completo vermelho' (on element 'body' at '/src/routes/index.tsx:1')
+// 'tire utm source organic da url de checkout e troque todos por esse https://checkout.perfectpay.com.br/pay/PPU38CQCGGM?utm_source=FB&utm_campaign=...&utm_medium=...&utm_content=...&utm_term=  e remova o outro' (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
