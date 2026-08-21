@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-// 'Validar se os parâmetros UTM do Facebook estão sendo anexados corretamente na URL do checkout após o processamento do tracking.' (on element 'body' at '/src/routes/index.tsx:1')
+// 'veja se esta marcando o pixel da utmify e me fale aonde vejo o token da perfect pay para fornecer o certo para a lovable' (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
