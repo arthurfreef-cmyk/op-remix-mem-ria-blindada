@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-// tem que esta em azul
-// bote as imagens dos planos 80 exercicios e 150 exericcios use os mockups (on element 'body' at '/src/routes/index.tsx:1')
+// 'deixe a borda do plano completo azul e o nome plano completo vermelho' (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
@@ -580,12 +579,12 @@ function OfertaPage() {
           </div>
 
           {/* Plano Completo */}
-          <div className="bg-white border-2 border-brand-red rounded-3xl p-8 shadow-xl flex flex-col relative scale-105 z-10">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-red text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full">
+          <div className="bg-white border-2 border-conversion-blue rounded-3xl p-8 shadow-xl flex flex-col relative scale-105 z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-conversion-blue text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full">
               Recomendado
             </div>
             <div className="mb-6">
-              <h3 className="text-xl font-bold mb-2 text-brand-red">Plano Completo</h3>
+              <h3 className="text-xl font-bold mb-2 text-red-600">Plano Completo</h3>
               <p className="text-sm text-muted-foreground">A experiência definitiva para quem quer resultados máximos em tempo recorde.</p>
             </div>
             <div className="mb-8">
@@ -595,7 +594,7 @@ function OfertaPage() {
                 className="w-full max-w-[180px] mx-auto mb-4"
                 loading="lazy"
               />
-              <span className="text-4xl font-black text-brand-red">R$ 19,90</span>
+              <span className="text-4xl font-black text-red-600">R$ 19,90</span>
               <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
             </div>
             <ul className="space-y-4 mb-10 flex-1">
