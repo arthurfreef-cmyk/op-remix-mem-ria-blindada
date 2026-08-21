@@ -31,7 +31,7 @@ export const CHECKOUT_HOSTS = ["checkout.perfectpay.com.br", "go.perfectpay.com.
 export const CHECKOUT_HOST = "checkout.perfectpay.com.br";
 
 /** URL única do checkout (fonte da verdade para todos os CTAs). */
-export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/pay/PPU38CQCGGM`;
+export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/pay/PPU38CQCGGM?utm_source=FB&utm_campaign=...&utm_medium=...&utm_content=...&utm_term=`;
 
 /**
  * Checkout do upsell MasterMind. Substitua o código do produto pelo link real
@@ -40,7 +40,7 @@ export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/pay/PPU38CQCGGM`;
  */
 export const MASTERMIND_CHECKOUT_URL = `https://go.perfectpay.com.br/PPU38CQFEH7`;
 
-const INVALID_VALUES = new Set(["", "organic", "undefined", "null", "none", "(none)", "direct"]);
+const INVALID_VALUES = new Set(["", "undefined", "null", "none", "(none)", "direct"]);
 
 /** Um valor só é atribuível se não for placeholder/vazio. */
 export function isValidValue(value: string | null | undefined): value is string {
