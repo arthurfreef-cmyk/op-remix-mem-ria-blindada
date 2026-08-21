@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 // tem que esta em azul
-// bote as imagens neles
+// bote as imagens dos planos 80 exercicios e 150 exericcios use os mockups (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
