@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-// 'tire utm source organic da url de checkout e troque todos por esse https://checkout.perfectpay.com.br/pay/PPU38CQCGGM?utm_source=FB&utm_campaign=...&utm_medium=...&utm_content=...&utm_term=  e remova o outro' (on element 'body' at '/src/routes/index.tsx:1')
+// 'remova a escolha de planos que esta acima da sessao de garantia e risco zero e deixe a escolha de planos q esta acima dos depoimentos' (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
@@ -740,103 +740,6 @@ function OfertaPage() {
         </div>
       </section>
 
-      {/* Sessão de Planos — Básico e Completo */}
-      <section className="px-4 py-12 max-w-4xl mx-auto border-t border-gray-100">
-        <h2 className="text-2xl sm:text-3xl font-black text-center mb-10 tracking-tight">Escolha o seu plano</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-          {/* Plano Básico */}
-          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
-            <img src={pack80} alt="Plano Básico" className="w-24 mx-auto mb-4 rounded-lg shadow-sm" />
-            <div className="mb-4">
-              <h3 className="font-bold text-xl mb-1">Plano Básico</h3>
-              <p className="text-xs text-muted-foreground">O essencial para começar a treinar sua memória</p>
-            </div>
-            
-            <div className="mb-6">
-              <div className="flex items-baseline gap-1">
-                <span className="text-2xl font-bold">R$ 9,90</span>
-                <span className="text-xs text-muted-foreground">acesso único</span>
-              </div>
-            </div>
-
-            <ul className="space-y-3 mb-8 flex-1">
-              {[
-                "80 exercícios práticos",
-                "Treinos de foco de 5 e 10 min",
-                "Acesso pelo celular e PC",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
-                  <Check className="w-4 h-4 text-success flex-shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-              {[
-                "Sem bônus exclusivos",
-                "Sem suporte VIP",
-                "Sem acesso vitalício",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground italic">
-                  <X className="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            <a
-              href="/downsell"
-              className="w-full inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-bold py-3 rounded-xl transition-colors"
-            >
-              Quero o Plano Básico
-            </a>
-          </div>
-
-          {/* Plano Completo */}
-          <div className="bg-white border-2 border-brand-red rounded-2xl p-6 flex flex-col shadow-xl relative scale-105 z-10">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="bg-brand-red text-white text-[10px] font-black px-4 py-1 rounded-full uppercase shadow-lg whitespace-nowrap">
-                Mais Recomendado
-              </span>
-            </div>
-
-            <img src={pack150} alt="Plano Completo" className="w-28 mx-auto mb-4 rounded-lg shadow-md" />
-            <div className="mb-4 pt-2">
-              <h3 className="font-bold text-xl mb-1">Plano Completo</h3>
-              <p className="text-xs text-muted-foreground">O método definitivo com todos os aceleradores</p>
-            </div>
-            
-            <div className="mb-6">
-              <div className="flex items-baseline gap-1">
-                <span className="text-2xl font-black text-brand-red">R$ 19,90</span>
-                <span className="text-xs text-muted-foreground">acesso vitalício</span>
-              </div>
-            </div>
-
-            <ul className="space-y-3 mb-8 flex-1">
-              {[
-                "150 exercícios progressivos",
-                "Todos os treinos de foco",
-                "Acesso vitalício ilimitado",
-                "Protocolo Anti-Esquecimento",
-                "Suporte VIP no WhatsApp",
-                "Simulados ENEM e Concursos",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-800 font-medium">
-                  <Check className="w-4 h-4 text-brand-red flex-shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            <a
-              href="#checkout"
-              className="w-full inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white font-black py-4 rounded-xl shadow-lg transition-transform active:scale-[0.98]"
-            >
-              Quero o Plano Completo →
-            </a>
-          </div>
-        </div>
-      </section>
 
 
       {/* Garantia */}
