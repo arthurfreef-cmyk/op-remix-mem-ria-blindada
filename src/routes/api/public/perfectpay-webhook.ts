@@ -74,6 +74,12 @@ export const Route = createFileRoute("/api/public/perfectpay-webhook")({
         const fullName = str(customer["full_name"]) ?? "";
         const [firstName, ...rest] = fullName.toLowerCase().split(/\s+/).filter(Boolean);
 
+        // Extrai fbp/fbc dos cookies do webhook (se existirem) ou dos metadados customizados do PerfectPay
+        // Alguns gateways permitem passar campos personalizados no checkout que voltam no webhook.
+        const metadata = (payload["metadata"] as Record<string, unknown> | undefined) ?? {};
+        const fbp = str(metadata["fbp"]) ?? str(payload["fbp"]);
+        const fbc = str(metadata["fbc"]) ?? str(payload["fbc"]) ?? str(payload["fbclid"]);
+
         const [em, ph, fn, ln] = await Promise.all([
           email ? sha256(email) : undefined,
           phoneDigits ? sha256(phoneDigits.length <= 11 ? `55${phoneDigits}` : phoneDigits) : undefined,
@@ -94,6 +100,8 @@ export const Route = createFileRoute("/api/public/perfectpay-webhook")({
                 ph: ph ? [ph] : undefined,
                 fn: fn ? [fn] : undefined,
                 ln: ln ? [ln] : undefined,
+                fbp: fbp ? [fbp] : undefined,
+                fbc: fbc ? [fbc] : undefined,
               },
               custom_data: {
                 value,

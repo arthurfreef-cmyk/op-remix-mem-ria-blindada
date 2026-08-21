@@ -147,6 +147,12 @@ export function buildCheckoutUrl(href: string): string {
       if (existing !== null && !isValidValue(existing)) url.searchParams.delete(key);
     }
 
+    // Garante que fbp e fbc sejam passados para o checkout para serem recuperados no webhook
+    const fbp = document.cookie.match(/(^|; )_fbp=([^;]*)/)?.[2];
+    if (fbp && !url.searchParams.has("fbp")) url.searchParams.set("fbp", fbp);
+    const fbc = document.cookie.match(/(^|; )_fbc=([^;]*)/)?.[2] || tracking.fbclid;
+    if (fbc && !url.searchParams.has("fbc")) url.searchParams.set("fbc", fbc.startsWith("fb.") ? fbc : `fb.1.${Date.now()}.${fbc}`);
+
     const finalUrl = url.toString();
     debug("URL final do checkout", finalUrl);
     return finalUrl;
