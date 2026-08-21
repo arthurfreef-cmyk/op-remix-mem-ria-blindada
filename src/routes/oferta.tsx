@@ -538,6 +538,12 @@ function OfertaPage() {
           {/* Plano Básico */}
           <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm flex flex-col hover:border-gray-300 transition-colors">
             <div className="mb-6">
+              <img
+                src={pack80}
+                alt="Pacote 80 exercícios"
+                className="w-full max-w-[160px] mx-auto mb-4"
+                loading="lazy"
+              />
               <h3 className="text-xl font-bold mb-2">Plano Inicial</h3>
               <p className="text-sm text-muted-foreground">Ideal para quem quer apenas conhecer o método e começar a treinar.</p>
             </div>
