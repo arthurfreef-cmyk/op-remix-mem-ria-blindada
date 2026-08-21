@@ -526,6 +526,89 @@ function OfertaPage() {
       </section>
 
 
+      {/* Seção de Planos */}
+      <section className="px-4 py-12 max-w-4xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-black tracking-tight mb-2">Escolha o seu Plano</h2>
+          <p className="text-muted-foreground">O treinamento ideal para o seu objetivo atual</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          {/* Plano Básico */}
+          <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm flex flex-col hover:border-gray-300 transition-colors">
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2">Plano Inicial</h3>
+              <p className="text-sm text-muted-foreground">Ideal para quem quer apenas conhecer o método e começar a treinar.</p>
+            </div>
+            <div className="mb-8">
+              <span className="text-4xl font-black">R$ 9,90</span>
+              <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
+            </div>
+            <ul className="space-y-4 mb-10 flex-1">
+              {[
+                "80 exercícios mentais essenciais",
+                "Acesso vitalício ao material",
+                "Versão digital em PDF",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm">
+                  <Check className="w-5 h-5 text-success flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+              <li className="flex items-start gap-3 text-sm text-muted-foreground/60">
+                <X className="w-5 h-5 flex-shrink-0" />
+                <span>Sem Bônus Exclusivos</span>
+              </li>
+              <li className="flex items-start gap-3 text-sm text-muted-foreground/60">
+                <X className="w-5 h-5 flex-shrink-0" />
+                <span>Sem Suporte VIP</span>
+              </li>
+            </ul>
+            <a 
+              href="/downsell" 
+              className="w-full py-4 px-6 rounded-xl border-2 border-gray-200 font-bold text-center hover:bg-gray-50 transition-colors"
+            >
+              Escolher Básico
+            </a>
+          </div>
+
+          {/* Plano Completo */}
+          <div className="bg-white border-2 border-brand-red rounded-3xl p-8 shadow-xl flex flex-col relative scale-105 z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-red text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full">
+              Recomendado
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-bold mb-2 text-brand-red">Plano Completo</h3>
+              <p className="text-sm text-muted-foreground">A experiência definitiva para quem quer resultados máximos em tempo recorde.</p>
+            </div>
+            <div className="mb-8">
+              <span className="text-4xl font-black text-brand-red">R$ 19,90</span>
+              <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
+            </div>
+            <ul className="space-y-4 mb-10 flex-1">
+              {[
+                "150 exercícios progressivos",
+                "Protocolo Anti-Esquecimento",
+                "Checklist de Última Hora",
+                "Suporte VIP no WhatsApp",
+                "Simulados ENEM e Concursos",
+                "Acesso vitalício e suporte 24h",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm">
+                  <Check className="w-5 h-5 text-success flex-shrink-0" />
+                  <span className="font-medium">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a 
+              href="#checkout" 
+              className="w-full py-4 px-6 rounded-xl bg-brand-red text-white font-bold text-center hover:bg-brand-red-dark transition-colors shadow-lg shadow-brand-red/20"
+            >
+              Quero o Plano Completo
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Depoimentos — carrossel WhatsApp realista */}
       <section className="bg-gray-50 px-4 py-14">
         <div className="max-w-3xl mx-auto">
