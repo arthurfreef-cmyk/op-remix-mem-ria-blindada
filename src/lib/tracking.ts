@@ -40,7 +40,7 @@ export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/pay/PPU38CQCGGM?utm_source
  */
 export const MASTERMIND_CHECKOUT_URL = `https://go.perfectpay.com.br/PPU38CQFEH7`;
 
-const INVALID_VALUES = new Set(["", "undefined", "null", "none", "(none)", "direct"]);
+const INVALID_VALUES = new Set(["", "organic", "undefined", "null", "none", "(none)", "direct"]);
 
 /** Um valor só é atribuível se não for placeholder/vazio. */
 export function isValidValue(value: string | null | undefined): value is string {
