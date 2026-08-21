@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 // tem que esta em azul
+// bote as imagens neles
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
@@ -735,6 +736,7 @@ function OfertaPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           {/* Plano Básico */}
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
+            <img src={pack80} alt="Plano Básico" className="w-24 mx-auto mb-4 rounded-lg shadow-sm" />
             <div className="mb-4">
               <h3 className="font-bold text-xl mb-1">Plano Básico</h3>
               <p className="text-xs text-muted-foreground">O essencial para começar a treinar sua memória</p>
@@ -786,6 +788,7 @@ function OfertaPage() {
               </span>
             </div>
 
+            <img src={pack150} alt="Plano Completo" className="w-28 mx-auto mb-4 rounded-lg shadow-md" />
             <div className="mb-4 pt-2">
               <h3 className="font-bold text-xl mb-1">Plano Completo</h3>
               <p className="text-xs text-muted-foreground">O método definitivo com todos os aceleradores</p>
