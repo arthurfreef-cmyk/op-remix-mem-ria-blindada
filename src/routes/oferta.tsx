@@ -735,6 +735,7 @@ function OfertaPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           {/* Plano Básico */}
           <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
+            <img src={pack80} alt="Plano Básico" className="w-24 mx-auto mb-4 rounded-lg shadow-sm" />
             <div className="mb-4">
               <h3 className="font-bold text-xl mb-1">Plano Básico</h3>
               <p className="text-xs text-muted-foreground">O essencial para começar a treinar sua memória</p>
