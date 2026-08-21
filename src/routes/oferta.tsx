@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 // tem que esta em azul
-// bote as imagens neles
+// bote as imagens dos planos 80 exercicios e 150 exericcios use os mockups (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
@@ -538,6 +538,12 @@ function OfertaPage() {
           {/* Plano Básico */}
           <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm flex flex-col hover:border-gray-300 transition-colors">
             <div className="mb-6">
+              <img
+                src={pack80}
+                alt="Pacote 80 exercícios"
+                className="w-full max-w-[160px] mx-auto mb-4"
+                loading="lazy"
+              />
               <h3 className="text-xl font-bold mb-2">Plano Inicial</h3>
               <p className="text-sm text-muted-foreground">Ideal para quem quer apenas conhecer o método e começar a treinar.</p>
             </div>
@@ -583,6 +589,12 @@ function OfertaPage() {
               <p className="text-sm text-muted-foreground">A experiência definitiva para quem quer resultados máximos em tempo recorde.</p>
             </div>
             <div className="mb-8">
+              <img
+                src={pack150}
+                alt="Pacote 150 exercícios"
+                className="w-full max-w-[180px] mx-auto mb-4"
+                loading="lazy"
+              />
               <span className="text-4xl font-black text-brand-red">R$ 19,90</span>
               <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
             </div>
