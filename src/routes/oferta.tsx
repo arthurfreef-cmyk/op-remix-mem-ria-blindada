@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-// 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNGU3N2M5MDhkNjgxMjA1NDExOGI4ZmNiNmYxMTU3MDBmNjg5ZTY4ZjEyYmVlMDU3OTZkNjIzODgxODY5YmY5ZjM2ODBhZDA3NTZlZWQxNGMiLCJpYXQiOjE3ODM2NDUzODAuNDYxNzE1LCJuYmYiOjE3ODM2NDUzODAuNDYxNzE5LCJleHAiOjE5NDE0MTE3ODAuNDQ2NTE4LCJzdWIiOiIyNzE2NzE4Iiwic2NvcGVzIjpbImludGVncmF0aW9uIl19.ivQ8dtxtImSxC9XV4Nmxhm13FUVJ6JYgND4nkukKDEEKeUrkyyHUQ9Ut22xa5rgXioZTJecd2wK4s_7lgZV-ZiB1jrCe4UBWsjlHrg9ZONxj63XVGSg_mf-PfRdDI6SSmiZeo4NMp913zf82mQmhI71snaNxRWJWv1wzjczZPA8_6NJEikmDkXJgD_aM8xOFqrW5U9YwAbRRaO6IpiBFC60FTfqNSduvnyTKuq80X9tqIo7-GEbQSJjvglxwGgj4j651B79KDHGBxS2yOkG5fw9M4s1tDVq3dSTpdj4voiq7o2Tld-i-2LXaMf6QQiGfYoHDe8h_vKuYZw90Mr0P1BwGd0VRkPfro3zu69xvsqZjwmgKTl3b0xx-nHGK291WmrVy7h-oo9Wjq3salKfpnKzfb75UjSuIvXdzZOW1GfqpjWNEqUPLD24vM8atPZrRMJZcMX9oqWK0yV5WqHa51MZ3NXGyLNrJkYj9hK0moQiQxbAlsfbssE22TuI21Zay65V0-UX0cI16dNXnPs-jKTqh-8i5UVrheRghisGirjj2i9ljjoSGP5iPTTzZcYYB0TBFNn_XmXVB33w4P-WEBn6fbPNnYICjJ3AMsoyMZJmi0UJ9GreOLjbUGXUVGi2ISTcaGfxqBOYYuzvX8s-3-sAyCBkbn5tsJxGa3IBkIPU  atualize o token de api e remova o outro' (on element 'body' at '/src/routes/index.tsx:1')
+// 'faça o cta do plano inicial ir direto para o checkout' (on element 'body' at '/src/routes/index.tsx:1')
 import { Check, Star, ShieldCheck, Brain, Lock, ChevronDown, Trophy, CreditCard, Pizza, Timer, Gift, Activity, Repeat, Target, X, Users, Award, BadgeCheck, GraduationCap, Phone, Video, MoreVertical, ArrowLeft, Camera, Smile, Paperclip, Mic } from "lucide-react";
 import pack150 from "@/assets/pack-150.jpg";
 import pack80 from "@/assets/pack-80.jpg";
@@ -570,12 +570,11 @@ function OfertaPage() {
                 <span>Sem Suporte VIP</span>
               </li>
             </ul>
-            <a 
-              href="/downsell" 
+            <CheckoutLink
               className="w-full py-4 px-6 rounded-xl border-2 border-gray-200 font-bold text-center hover:bg-gray-50 transition-colors"
             >
               Escolher Básico
-            </a>
+            </CheckoutLink>
           </div>
 
           {/* Plano Completo */}
