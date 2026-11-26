@@ -145,7 +145,7 @@ function offerForPath(pathname: string): { name: string; value: number } {
   if (pathname.startsWith("/pos-compra/mastermind")) {
     return { name: "MasterMind: A Mente Perfeita", value: 47.9 };
   }
-  return { name: "150 Exercícios Mentais", value: 19.9 };
+  return { name: "150 Exercícios Mentais", value: 27.9 };
 }
 
 /**

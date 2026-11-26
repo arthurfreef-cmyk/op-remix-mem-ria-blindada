@@ -9,43 +9,23 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ReembolsoRouteImport } from './routes/reembolso'
-import { Route as PrivacidadeRouteImport } from './routes/privacidade'
-import { Route as OfertaRouteImport } from './routes/oferta'
-import { Route as ObrigadoRouteImport } from './routes/obrigado'
-import { Route as DownsellRouteImport } from './routes/downsell'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as PreviewMastermindPresellRouteImport } from './routes/preview.mastermind-presell'
-import { Route as PreviewMastermindRouteImport } from './routes/preview.mastermind'
-import { Route as PosCompraObrigadoRouteImport } from './routes/pos-compra.obrigado'
-import { Route as PosCompraMastermindPresellRouteImport } from './routes/pos-compra.mastermind-presell'
+import { Route as DownsellRouteImport } from './routes/downsell'
+import { Route as ObrigadoRouteImport } from './routes/obrigado'
+import { Route as OfertaRouteImport } from './routes/oferta'
+import { Route as PrivacidadeRouteImport } from './routes/privacidade'
+import { Route as ReembolsoRouteImport } from './routes/reembolso'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PosCompraMastermindRouteImport } from './routes/pos-compra.mastermind'
+import { Route as PosCompraMastermindPresellRouteImport } from './routes/pos-compra.mastermind-presell'
+import { Route as PosCompraObrigadoRouteImport } from './routes/pos-compra.obrigado'
+import { Route as PreviewMastermindRouteImport } from './routes/preview.mastermind'
+import { Route as PreviewMastermindPresellRouteImport } from './routes/preview.mastermind-presell'
 import { Route as ApiPublicPerfectpayWebhookRouteImport } from './routes/api/public/perfectpay-webhook'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReembolsoRoute = ReembolsoRouteImport.update({
-  id: '/reembolso',
-  path: '/reembolso',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacidadeRoute = PrivacidadeRouteImport.update({
-  id: '/privacidade',
-  path: '/privacidade',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OfertaRoute = OfertaRouteImport.update({
-  id: '/oferta',
-  path: '/oferta',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ObrigadoRoute = ObrigadoRouteImport.update({
-  id: '/obrigado',
-  path: '/obrigado',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DownsellRoute = DownsellRouteImport.update({
@@ -53,25 +33,34 @@ const DownsellRoute = DownsellRouteImport.update({
   path: '/downsell',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ObrigadoRoute = ObrigadoRouteImport.update({
+  id: '/obrigado',
+  path: '/obrigado',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PreviewMastermindPresellRoute =
-  PreviewMastermindPresellRouteImport.update({
-    id: '/preview/mastermind-presell',
-    path: '/preview/mastermind-presell',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const PreviewMastermindRoute = PreviewMastermindRouteImport.update({
-  id: '/preview/mastermind',
-  path: '/preview/mastermind',
+const OfertaRoute = OfertaRouteImport.update({
+  id: '/oferta',
+  path: '/oferta',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PosCompraObrigadoRoute = PosCompraObrigadoRouteImport.update({
-  id: '/pos-compra/obrigado',
-  path: '/pos-compra/obrigado',
+const PrivacidadeRoute = PrivacidadeRouteImport.update({
+  id: '/privacidade',
+  path: '/privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReembolsoRoute = ReembolsoRouteImport.update({
+  id: '/reembolso',
+  path: '/reembolso',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PosCompraMastermindRoute = PosCompraMastermindRouteImport.update({
+  id: '/pos-compra/mastermind',
+  path: '/pos-compra/mastermind',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PosCompraMastermindPresellRoute =
@@ -80,11 +69,22 @@ const PosCompraMastermindPresellRoute =
     path: '/pos-compra/mastermind-presell',
     getParentRoute: () => rootRouteImport,
   } as any)
-const PosCompraMastermindRoute = PosCompraMastermindRouteImport.update({
-  id: '/pos-compra/mastermind',
-  path: '/pos-compra/mastermind',
+const PosCompraObrigadoRoute = PosCompraObrigadoRouteImport.update({
+  id: '/pos-compra/obrigado',
+  path: '/pos-compra/obrigado',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PreviewMastermindRoute = PreviewMastermindRouteImport.update({
+  id: '/preview/mastermind',
+  path: '/preview/mastermind',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreviewMastermindPresellRoute =
+  PreviewMastermindPresellRouteImport.update({
+    id: '/preview/mastermind-presell',
+    path: '/preview/mastermind-presell',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ApiPublicPerfectpayWebhookRoute =
   ApiPublicPerfectpayWebhookRouteImport.update({
     id: '/api/public/perfectpay-webhook',
@@ -204,39 +204,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reembolso': {
-      id: '/reembolso'
-      path: '/reembolso'
-      fullPath: '/reembolso'
-      preLoaderRoute: typeof ReembolsoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacidade': {
-      id: '/privacidade'
-      path: '/privacidade'
-      fullPath: '/privacidade'
-      preLoaderRoute: typeof PrivacidadeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/oferta': {
-      id: '/oferta'
-      path: '/oferta'
-      fullPath: '/oferta'
-      preLoaderRoute: typeof OfertaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/obrigado': {
-      id: '/obrigado'
-      path: '/obrigado'
-      fullPath: '/obrigado'
-      preLoaderRoute: typeof ObrigadoRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/downsell': {
@@ -246,32 +218,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DownsellRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/obrigado': {
+      id: '/obrigado'
+      path: '/obrigado'
+      fullPath: '/obrigado'
+      preLoaderRoute: typeof ObrigadoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/preview/mastermind-presell': {
-      id: '/preview/mastermind-presell'
-      path: '/preview/mastermind-presell'
-      fullPath: '/preview/mastermind-presell'
-      preLoaderRoute: typeof PreviewMastermindPresellRouteImport
+    '/oferta': {
+      id: '/oferta'
+      path: '/oferta'
+      fullPath: '/oferta'
+      preLoaderRoute: typeof OfertaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/preview/mastermind': {
-      id: '/preview/mastermind'
-      path: '/preview/mastermind'
-      fullPath: '/preview/mastermind'
-      preLoaderRoute: typeof PreviewMastermindRouteImport
+    '/privacidade': {
+      id: '/privacidade'
+      path: '/privacidade'
+      fullPath: '/privacidade'
+      preLoaderRoute: typeof PrivacidadeRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pos-compra/obrigado': {
-      id: '/pos-compra/obrigado'
-      path: '/pos-compra/obrigado'
-      fullPath: '/pos-compra/obrigado'
-      preLoaderRoute: typeof PosCompraObrigadoRouteImport
+    '/reembolso': {
+      id: '/reembolso'
+      path: '/reembolso'
+      fullPath: '/reembolso'
+      preLoaderRoute: typeof ReembolsoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pos-compra/mastermind': {
+      id: '/pos-compra/mastermind'
+      path: '/pos-compra/mastermind'
+      fullPath: '/pos-compra/mastermind'
+      preLoaderRoute: typeof PosCompraMastermindRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pos-compra/mastermind-presell': {
@@ -281,11 +267,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PosCompraMastermindPresellRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pos-compra/mastermind': {
-      id: '/pos-compra/mastermind'
-      path: '/pos-compra/mastermind'
-      fullPath: '/pos-compra/mastermind'
-      preLoaderRoute: typeof PosCompraMastermindRouteImport
+    '/pos-compra/obrigado': {
+      id: '/pos-compra/obrigado'
+      path: '/pos-compra/obrigado'
+      fullPath: '/pos-compra/obrigado'
+      preLoaderRoute: typeof PosCompraObrigadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preview/mastermind': {
+      id: '/preview/mastermind'
+      path: '/preview/mastermind'
+      fullPath: '/preview/mastermind'
+      preLoaderRoute: typeof PreviewMastermindRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preview/mastermind-presell': {
+      id: '/preview/mastermind-presell'
+      path: '/preview/mastermind-presell'
+      fullPath: '/preview/mastermind-presell'
+      preLoaderRoute: typeof PreviewMastermindPresellRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/perfectpay-webhook': {

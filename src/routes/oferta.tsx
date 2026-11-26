@@ -31,7 +31,7 @@ export const Route = createFileRoute("/oferta")({
       { title: "150 Exercícios Mentais — Lembrar de Tudo e Foco Total" },
       { name: "description", content: "150 exercícios práticos para lembrar de tudo que deseja e nunca mais ter esquecimentos nos estudos ou no dia a dia. +12.000 pessoas transformadas." },
       { property: "og:title", content: "150 Exercícios Mentais — Mentes Exercitadas" },
-      { property: "og:description", content: "Memorize mais rápido para provas e concursos em 15 min/dia. Garantia de 7 dias. R$19,90." },
+      { property: "og:description", content: "Memorize mais rápido para provas e concursos em 15 min/dia. Garantia de 7 dias. R$27,90." },
       { property: "og:url", content: "https://mentesexercitadas.lovable.app/oferta" },
       { property: "og:type", content: "product" },
     ],
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/oferta")({
           offers: {
             "@type": "Offer",
             url: "https://mentesexercitadas.lovable.app/oferta",
-            price: "19.90",
+            price: "27.90",
             priceCurrency: "BRL",
             availability: "https://schema.org/InStock",
           },
@@ -332,7 +332,7 @@ function OfertaPage() {
 
           <div className="text-center mb-2">
             <p className="text-sm text-muted-foreground line-through">De R$ 147,00</p>
-            <p className="text-4xl sm:text-5xl font-black text-brand-red">R$ 19,90</p>
+            <p className="text-4xl sm:text-5xl font-black text-brand-red">R$ 27,90</p>
             <p className="text-xs text-muted-foreground mt-1 flex items-center justify-center gap-1.5">
               <Pizza className="w-3.5 h-3.5 text-brand-red" /> menos que uma pizza · até 3x no cartão
             </p>
@@ -399,8 +399,8 @@ function OfertaPage() {
 
           <div className="mt-6 bg-conversion-blue rounded-xl p-5 text-center">
             <p className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white/90 mb-1">Hoje você leva tudo por apenas</p>
-            <p className="text-5xl sm:text-6xl font-black text-white mb-1">R$ 19,90</p>
-            <p className="text-xs sm:text-sm font-bold text-yellow-300">Economia de R$ 565,10 · 97% OFF</p>
+            <p className="text-5xl sm:text-6xl font-black text-white mb-1">R$ 27,90</p>
+            <p className="text-xs sm:text-sm font-bold text-yellow-300">Economia de R$ 557,10 · 95% OFF</p>
           </div>
 
           <div className="mt-5 text-center">
@@ -593,7 +593,7 @@ function OfertaPage() {
                 className="w-full max-w-[180px] mx-auto mb-4"
                 loading="lazy"
               />
-              <span className="text-4xl font-black text-red-600">R$ 19,90</span>
+              <span className="text-4xl font-black text-red-600">R$ 27,90</span>
               <span className="text-muted-foreground text-sm ml-2">pagamento único</span>
             </div>
             <ul className="space-y-4 mb-10 flex-1">
@@ -815,8 +815,8 @@ function OfertaPage() {
           {[
             { q: "\"Não tenho tempo\" — funciona pra quem corre o dia todo?", a: "Justamente por isso o método é em blocos de 5, 10 e 20 minutos. Você treina no intervalo, no transporte ou antes de dormir. Quem estuda e trabalha é exatamente quem mais precisa de uma mente que retém na primeira vez." },
             { q: "\"Tenho memória ruim desde sempre\" — vai funcionar pra mim?", a: "Memória não é talento, é treino. A neurociência prova que o cérebro reconstrói conexões em qualquer idade — os exercícios começam no nível básico e evoluem com você, mesmo se você sempre esqueceu o que estudou." },
-            { q: "\"R$19,90 é barato demais — isso é bom mesmo?\"", a: "É barato de propósito. Nossa missão é aprovar o máximo de alunos possível — e o preço baixo paga o desenvolvimento, o suporte e mantém o método acessível pra quem mais precisa. O conteúdo, a garantia e os bônus são exatamente os mesmos de cursos cobrando R$497." },
-            { q: "\"R$19,90 ainda parece caro\" — vale o investimento?", a: "Custa menos que uma pizza e fica com você pra sempre. Compare com o preço de reprovar de novo, perder uma vaga no concurso ou viver relendo a mesma matéria sem nunca gravar." },
+            { q: "\"R$27,90 é barato demais — isso é bom mesmo?\"", a: "É barato de propósito. Nossa missão é aprovar o máximo de alunos possível — e o preço baixo paga o desenvolvimento, o suporte e mantém o método acessível pra quem mais precisa. O conteúdo, a garantia e os bônus são exatamente os mesmos de cursos cobrando R$497." },
+            { q: "\"R$27,90 ainda parece caro\" — vale o investimento?", a: "Custa menos que uma pizza e fica com você pra sempre. Compare com o preço de reprovar de novo, perder uma vaga no concurso ou viver relendo a mesma matéria sem nunca gravar." },
             { q: "\"E se eu não gostar?\"", a: "Você tem 7 dias de garantia incondicional. Testa tudo, faz os exercícios, lê os bônus. Se não sentir diferença na retenção do conteúdo, devolvemos 100% do valor. O risco é todo nosso." },
             { q: "\"Preciso saber alguma coisa antes?\"", a: "Não. Cada exercício tem instrução passo a passo. Serve para qualquer aluno: vestibulando, concurseiro, universitário ou quem só quer parar de esquecer o que estuda." },
             { q: "\"Quanto tempo até ver resultado?\"", a: "A maioria sente diferença em 2 a 4 semanas treinando 15 min/dia. Quem treina todo dia acelera. Consistência > intensidade." },

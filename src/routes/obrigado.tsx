@@ -69,7 +69,7 @@ function ObrigadoPage() {
 
     const search = new URLSearchParams(window.location.search);
     const orderId = pick(search, PARAM_ALIASES.orderId);
-    const value = parseAmount(pick(search, PARAM_ALIASES.value)) ?? 19.9;
+    const value = parseAmount(pick(search, PARAM_ALIASES.value)) ?? 27.9;
     const contentName = pick(search, PARAM_ALIASES.product) ?? "150 Exercícios Mentais";
     const fullName = pick(search, PARAM_ALIASES.name) ?? "";
     const [firstName, ...rest] = fullName.split(/\s+/).filter(Boolean);

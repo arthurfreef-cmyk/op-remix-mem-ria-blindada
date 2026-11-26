@@ -87,7 +87,7 @@ export function StickyMobileCTA({ href, label = "QUERO MINHA APROVAÇÃO →" }:
       <div className="flex items-center gap-2.5">
         <div className="flex-shrink-0">
           <p className="text-[10px] text-muted-foreground line-through leading-none">R$127</p>
-          <p className="text-lg font-black text-brand-red leading-tight">R$19,90</p>
+          <p className="text-lg font-black text-brand-red leading-tight">R$27,90</p>
         </div>
         <a href={href} className="flex-1 bg-brand-red hover:bg-brand-red-dark active:scale-[0.98] transition text-white font-black text-sm py-3 rounded-lg text-center shadow-lg">
           {label}

@@ -28,10 +28,10 @@ export type TrackingParams = Partial<Record<(typeof TRACKING_KEYS)[number], stri
 
 /** Hosts de checkout da Perfect Pay (link direto e encurtador). */
 export const CHECKOUT_HOSTS = ["checkout.perfectpay.com.br", "go.perfectpay.com.br"] as const;
-export const CHECKOUT_HOST = "checkout.perfectpay.com.br";
+export const CHECKOUT_HOST = "go.perfectpay.com.br";
 
 /** URL única do checkout (fonte da verdade para todos os CTAs). */
-export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/pay/PPU38CQCGGM?utm_source=FB&utm_campaign=...&utm_medium=...&utm_content=...&utm_term=`;
+export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/PPU38CQCGGM`;
 
 /**
  * Checkout do upsell MasterMind. Substitua o código do produto pelo link real
